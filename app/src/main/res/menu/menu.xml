@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/voltar"
+        android:title="voltar"
+        android:icon="@drawable/ic_arrow_back"
+        android:orderInCategory="1"
+        android:menuCategory="system"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/sdf"
+        android:title="voltar"
+        android:icon="@drawable/ic_arrow_back"
+        android:orderInCategory="0"
+        android:menuCategory="system"
+        app:showAsAction="always"
+        />
+
+</menu>
