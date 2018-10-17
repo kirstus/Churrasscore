@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">churrasscoree</string>
+    <string name="truco">Truco</string>
+    <string name="duplaUm">Dupla 1</string>
+    <string name="duplaDois">Dupla 2</string>
+    <string name="sete">7</string>
+    <string name="x">X</string>
+    <string name="dois">2</string>
+    <string name="Vitorias">Vitórias: </string>
+    <string name="addPontos">Adicionar pontos</string>
+    <string name="minusOne">-1</string>
+    <string name="plusOne">+1</string>
+    <string name="plusThree">+3</string>
+    <string name="plusSix">+6</string>
+    <string name="plusNine">+9</string>
+    <string name="plusTwelve">+12</string>
+    <string name="timeUm">Time 1</string>
+    <string name="timeDois">Time 2</string>
+    <string name="pebolim">Pebolim</string>
+    <string name="futebol">Futebol</string>
+    <string name="addGoals">Adicionar Gols:</string>
+    <string name="cinco">5</string>
+    <string name="um">1</string>
+    <string name="tempo">Determinar tempo</string>
+</resources>

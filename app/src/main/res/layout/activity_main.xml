@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a619710.churrasscoree.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/truco"
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/greenText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@color/grayBar"/>
+
+    <LinearLayout
+        android:paddingHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="left"
+            android:hint="@string/duplaUm"
+            android:textColorHint="@color/black"
+        />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="right"
+            android:hint="@string/duplaDois"
+            android:textColorHint="@color/black"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingHorizontal="20dp"
+        >
+
+        <TextView
+            android:onClick="onClick"
+            android:clickable="true"
+            android:id="@+id/firstTeamCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingVertical="36dp"
+            android:textAlignment="center"
+            android:textColor="@color/greenText"
+            android:textSize="80sp"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/x"
+            android:textAlignment="center"
+            android:textColor="@color/greenText"
+            android:textSize="50sp"
+        />
+
+        <TextView
+            android:id="@+id/secondTeamCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingVertical="36dp"
+            android:textAlignment="center"
+            android:textColor="@color/greenText"
+            android:textSize="80sp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/firstVictoryCounter"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+        />
+
+        <View
+            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+        />
+
+        <TextView
+            android:id="@+id/secondVictoryCounter"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+        />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@color/grayBar"
+    />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="left"
+        android:paddingLeft="12dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:text="@string/addPontos"
+        android:textAllCaps="true"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/btnPlusTruco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/plusOne"
+            android:paddingVertical="12dp"
+            android:textSize="30sp"
+            android:layout_marginRight="25dp"
+            android:background="@color/greenBackground"
+        />
+
+
+
+        <Button
+            android:id="@+id/btnMinusTruco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingVertical="12dp"
+            android:text="@string/minusOne"
+            android:textSize="30sp"
+            android:background="@color/greenBackground"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp">
+
+        <Button
+            android:id="@+id/btnPlusThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/plusThree"
+            android:paddingVertical="12dp"
+            android:textSize="30sp"
+            android:layout_marginRight="25dp"
+            android:background="@color/greenBackground"
+            />
+
+        <Button
+            android:id="@+id/btnPlusSix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/plusSix"
+            android:paddingVertical="12dp"
+            android:textSize="30sp"
+            android:layout_marginRight="25dp"
+            android:background="@color/greenBackground"
+            />
+
+
+        <Button
+            android:id="@+id/btnPlusNine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/plusNine"
+            android:paddingVertical="12dp"
+            android:textSize="30sp"
+            android:layout_marginRight="25dp"
+            android:background="@color/greenBackground"
+            />
+
+
+
+        <Button
+            android:id="@+id/btnPlusTwelve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingVertical="12dp"
+            android:text="@string/plusTwelve"
+            android:textSize="30sp"
+            android:background="@color/greenBackground"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
