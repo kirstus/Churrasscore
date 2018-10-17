@@ -21,6 +21,6 @@ class SplashScreenActivity : AppCompatActivity() {
             val Churras = Intent(this, Churras::class.java)
             startActivity(Churras)
             finish()
-        }, 2000)
+        }, 200)
     }
 }

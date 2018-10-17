@@ -1,10 +1,13 @@
 package com.example.a619710.churrasscoree
 
+import android.app.Dialog
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_splash_screen.*
+import kotlinx.android.synthetic.main.popup.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     firstVictoryCounterTruco++
+                    test("Time um")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -48,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     secondVictoryCounterTruco++
+                    test("Time dois")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -82,6 +87,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     firstVictoryCounterTruco++
+                    test("Time um")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -96,6 +102,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     secondVictoryCounterTruco++
+                    test("Time dois")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -114,6 +121,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     firstVictoryCounterTruco++
+                    test("Time um")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -128,6 +136,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     secondVictoryCounterTruco++
+                    test("Time dois")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -146,6 +155,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     firstVictoryCounterTruco++
+                    test("Time um")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -160,6 +170,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     secondVictoryCounterTruco++
+                    test("Time dois")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -178,6 +189,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     firstVictoryCounterTruco++
+                    test("Time um")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -192,6 +204,7 @@ class MainActivity : AppCompatActivity() {
                     firstCounterTruco = 0
                     secondCounterTruco = 0
                     secondVictoryCounterTruco++
+                    test("Time dois")
                 }
 
                 firstTeamCounter.text = firstCounterTruco.toString()
@@ -211,5 +224,16 @@ class MainActivity : AppCompatActivity() {
             secondTeamCounter.setBackgroundColor(getColor(R.color.whiteishGray))
             firstTeamCounter.setBackgroundColor(getColor(R.color.transparent))
         }
+    }
+
+    private fun test( pnes:String){
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup)
+        dialog.textVencedor.text = pnes
+        GlideApp.with(this)
+                .load("https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/trophy.png" )
+                .placeholder(R.mipmap.ic_launcher)
+                .into(dialog.imgTop)
+        dialog.show()
     }
 }
